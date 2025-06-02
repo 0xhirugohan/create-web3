@@ -3,7 +3,7 @@ import { Link } from 'react-router'
 import ReactLogo from '../assets/react.svg'
 
 const Navbar = () => {
-    return <div className="bg-zinc-300/95 fixed top-0 left-0 right-0 z-50 p-3 flex justify-between">
+    return <div className="bg-zinc-100/90 border-b border-zinc-600 fixed top-0 left-0 right-0 z-50 p-3 flex justify-between">
         <div className="flex gap-x-8 items-center">
             <div className="flex gap-x-2">
                 <img
