@@ -8,7 +8,7 @@ import {
     useChains,
     useDisconnect
 } from 'wagmi'
-import { type Address, formatEther } from 'viem'
+import { type Address, formatUnits } from 'viem'
 
 import ReactLogo from '../assets/react.svg'
 
@@ -71,7 +71,7 @@ const Navbar = () => {
         </div>
         <div className="flex items-center gap-x-4">
             { ready && wallets.length > 0 && <p>
-                { parseInt(formatEther(userBalance?.value ?? BigInt(0))).toFixed(4) } {` `}
+                { parseFloat(formatUnits(userBalance?.value ?? BigInt(0), userBalance?.decimals ?? 0)).toFixed(4) } {` `}
                 { userBalance?.symbol }
             </p> }
 
