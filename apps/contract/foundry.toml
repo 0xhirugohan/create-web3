@@ -20,6 +20,13 @@ remappings_prefix = ""
 # ignored when `soldeer.toml` is used as config (uses `remappings.txt`)
 remappings_location = "txt"
 
+[rpc_endpoints]
+anvil = "${ANVIL_URL}"
+monadTestnet = "https://testnet-rpc.monad.xyz"
+ 
+[etherscan]
+anvil = { key = "${ANVIL_KEY}" }
+
 [dependencies]
 forge-std = "1.9.7"
 
